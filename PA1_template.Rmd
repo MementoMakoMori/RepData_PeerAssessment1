@@ -6,8 +6,9 @@ output: html_document
 keep_md: true
 ---
 
-``` {r setoptions, echo = FALSE}
+``` {r setoptions, include = FALSE}
 knitr::opts_chunk$set(echo=TRUE)
+knitr::opts_chunk$set( fig.path = "figs/fig-")
 ```
 
 This is my report for the Reproducible Research project, Course 5 in the Data Science Specialization by John Hopkins on Coursera. This analysis has five discrete parts.
