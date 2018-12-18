@@ -6,7 +6,7 @@ output: html_document
 keep_md: true
 ---
 
-``` {r setoptions, echo = FALSE}
+``` {r setoptions}
 knitr::opts_chunk$set(echo=TRUE)
 ```
 
@@ -22,7 +22,7 @@ This is my report for the Reproducible Research project, Course 5 in the Data Sc
 
 First I'm going to load any necessary packages and the data set. My analysis will be using dplyr for data wrangling and ggplot2 for some of the graphs.
 
-```{r part1.1, results = FALSE}
+```{r part1.1}
 library(ggplot2)
 library(dplyr)
 data <- read.csv("activity.csv")
@@ -130,7 +130,7 @@ colnames(sep_means) <- c("Day", "Interval", "Steps")
 
 ```
 
-There was probably a more efficient method than using grep and taking indices, but it works and made sense to me. Now, the final chart! Although the course example had two panels, I decided to make one panel with overlapping color-coded lines. I think it makes it easier to compare weekday vs weekend values at any single interval.
+There was probably a more efficient method than using grep and taking indices, but it works and made sense to me. Now, the final chart! Although the course example had to panels, I decided to make one panel with overlapping color-coded lines. I think it makes it easier to compare weekday vs weekend values a single interval.
 
 
 ```{r part5.2}
