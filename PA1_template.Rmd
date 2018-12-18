@@ -23,7 +23,7 @@ This is my report for the Reproducible Research project, Course 5 in the Data Sc
 
 First I'm going to load any necessary packages and the data set. My analysis will be using dplyr for data wrangling and ggplot2 for some of the graphs.
 
-```{r part1.1, results = FALSE}
+```{r part1.1}
 library(ggplot2)
 library(dplyr)
 data <- read.csv("activity.csv")
